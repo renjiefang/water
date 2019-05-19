@@ -1,0 +1,152 @@
+@import "./reset.css";
+
+header {
+    height: 0.88rem;
+    line-height: 0.88rem;
+    color: #4ebbfe;
+    font-size: 0.38rem;
+    text-align: center;
+}
+
+.search {
+    height: 0.6rem;
+    padding: 0.17rem 0.22rem;
+    line-height: 0.6rem;
+    overflow: hidden;
+}
+.search span {
+    font-size: 0.28rem;
+    color: #36a8fe;
+    float: left;
+    position: relative;
+
+}
+.search span::after {
+    content: '\e62b';
+    font-family: iconfont;
+    position: absolute;
+    width: 0.17rem;
+    height: 0.1rem;
+    color: #36a8fe;
+    top: 0.02rem;
+
+}
+
+.search a{
+    float: right;
+    width: 5.93rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    background-color: rgba(235,247,255, 0.58);
+    border-radius: 30px;
+    border: solid 2px rgba(55, 169, 254, 0.17);
+    /*opacity: 0.58;*/
+}
+.search a img {
+    float: right;
+    width: 0.37rem;
+    height: 0.38rem;
+    line-height: 0.38rem;
+    box-shadow: 0 3rem 10rem 0 rgba(127, 211, 161, 0.45);
+    margin: 0.11rem 0.05rem 0;
+
+}
+/*首页轮播图开始*/
+.swipe a {
+    display: block;
+    width: 100%;
+    height: 2.99rem;
+}
+.swipe a img {
+    height: 100%;
+    width: 100%;
+}
+/*首页轮播图结束*/
+
+/*首页分类开始*/
+.type {
+    width: 100%;
+    height: 7.31rem;
+
+}
+.type ul {
+     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 0.42rem;
+    box-sizing: border-box;
+}
+.type ul li {
+    width: 33.3%;
+    height: 1.74rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.type li a img {
+    width: 1.14rem;
+    height: 1.10rem;
+}
+.type ul li p {
+
+    width: 0.98rem;
+    height: 0.23rem;
+    font-size: 0.24rem;
+    line-height: 0.4rem;
+    color: #8e9397;
+    margin: 0 auto;
+    text-align: center;
+
+}
+/*首页分类结束*/
+
+/*首页底部开始*/
+.nav {
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height: 0.98rem;
+    background-color: rgb(241,249,255);
+}
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.nav ul li {
+    width: 20%;
+}
+.nav ul li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.nav ul li img {
+    width: 0.48rem;
+    height: 0.50rem;
+    opacity: 0.5;
+
+}
+.nav ul li a.nav_focus  img{
+    opacity: 1;
+}
+.nav ul li a.nav_focus  span{
+    color: #59c3fe;
+}
+
+.nav ul li span {
+    width: 0.48rem;
+    font-size: 0.24rem;
+    line-height: 0.40rem;
+    color: rgb(157,220,255);
+}

@@ -1,0 +1,20 @@
+@import 'reset.css';
+header {
+    height: 0.88rem;
+    line-height: 0.88rem;
+    color: #4ebbfe;
+    font-size: 0.38rem;
+    text-align: center;
+    position: relative;
+    background-color: #fbfeff;
+}
+header span  a::after {
+    position:absolute;
+    content: '\e693';
+    font-family: "iconfont";
+    width: 0.25rem;
+    height: 0.42rem;
+    color: #36a8fe;
+    left: 0.24rem;
+
+}
