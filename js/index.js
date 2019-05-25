@@ -3,21 +3,29 @@
  * @date  2019-05-15 10:34
  */
 
-(function (doc, win) {
-    var docEl = doc.documentElement,
-        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-        recalc = function () {
-            var clientWidth = docEl.clientWidth;
-            if (!clientWidth) return;
-            if(clientWidth>=750){
-                // 这里的640 取决于设计稿的宽度
-                docEl.style.fontSize = '100px';
-            }else{
-                docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
-            }
-        };
+ var ocateory = document.querySelector(".cateory")
+ var  oli = ocateory.getElementsByTagName('li')
+var olist = document.querySelectorAll('.showren')
+console.log(olist);
+ var index = 0;
 
-    if (!doc.addEventListener) return;
-    win.addEventListener(resizeEvt, recalc, false);
-    doc.addEventListener('DOMContentLoaded', recalc, false);
-})(document, window);
+   console.log(oli);
+ // not   onmouseenter
+    ocateory.onmouseover = function() {
+    for(var i = 0; i <oli.length; i++) {
+        oli[i].id = i
+        oli[i].className = ''
+        oli[i].onclick = function() {
+            this.className = 'focus'
+                     index = this.id;
+                     listShow(index)
+        }
+    }
+}
+
+  function listShow(index) {
+        for(var i =0; i <olist.length; i++) {
+               olist[i].style.display = ''
+        }
+        olist[index].style.display = 'block'
+  }

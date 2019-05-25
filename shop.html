@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="./css/listDetail.css">
     <link rel="stylesheet" href="./css/water_road.css">
+    <link rel="stylesheet" href="./css/listDetail.css">
     <link rel="stylesheet" href="./css/shop_nav.css">
     <link rel="stylesheet" href="./css/shop.css">
 </head>
@@ -35,17 +36,17 @@
    </div>
 <div class="cateory">
     <ul>
-        <li>全部项目</li>
-        <li>促销项目</li>
-        <li>用户评价</li>
+        <li class="focus">全部项目</li>
+        <li >促销项目</li>
+        <li >用户评价</li>
     </ul>
 </div>
 <div>
-    <div class="list">
+    <div class="list  showren" style="display:block;">
         <ul>
             <li class="list_item">
                 <a href="listDetail.html">
-                    <img src="./image/detailmg.png" alt="">
+                    <img src="./image/zhuozi.png" alt="">
                 </a>
                 <div>
                     <ul>
@@ -106,6 +107,127 @@
             </li>
         </ul>
     </div>
+    <div class="list  showren" style="display:none;">
+        <ul>
+            <li class="list_item">
+                <a href="listDetail.html">
+                    <img src="./image/pipe.jpg" alt="">
+                </a>
+                <div>
+                    <ul>
+                        <li class="list_item_title">皮毛服饰清洗保养</li>
+                        <li ><p style="font-size: 0.24rem; color: #afb1b2; white-space: nowrap;  text-overflow:ellipsis; overflow: hidden; width:4rem;">服饰内外污渍清洗,去霉杀菌,不包含补色补伤</p></li>
+                        <li class="rate">
+                            <span style="margin-right: 0.5rem;" class="spot">评分 <span>5.0</span></span>
+                            <span class="spot">接单率 <span>100<i style="opacity: .5;">%</i></span></span>
+                        </li>
+                        <li class="price">
+                            <span class="spot">包大师</span>
+                            <span class="right">60元 定金</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list_item">
+                <a href="">
+                    <img src="./image/sell_thing.png" alt="">
+                </a>
+                <div>
+                    <ul>
+                        <li class="list_item_title">皮毛服饰清洗保养</li>
+                        <li ><p style="font-size: 0.24rem; color: #afb1b2; white-space: nowrap;  text-overflow:ellipsis; overflow: hidden; width:4rem;">服饰内外污渍清洗,去霉杀菌,不包含补色补伤</p></li>
+
+                        <li class="rate">
+                            <span style="margin-right: 0.5rem;" class="spot">评分 <span>5.0</span></span>
+                            <span class="spot">接单率 <span>100<i style="opacity: .5;">%</i></span></span>
+                        </li>
+
+                        <li class="price">
+                            <span class="spot">包大师</span>
+                            <span class="right">60元 定金</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="remark list showren" style="display: none;">
+        <ul class="remark_title_list">
+            <li class="remark_title_focus">
+                <span>全部</span>
+                <span>666</span>
+            </li>
+            <li>
+                <span>好评</span>
+                <span>555</span>
+            </li>
+            <li>
+                <span>中评</span>
+                <span>22</span>
+            </li>
+            <li>
+                <span>差评</span>
+                <span>56</span>
+            </li>
+            <li>
+                <span>有图</span>
+                <span>1</span>
+            </li>
+        </ul>
+        <ul class="remark_list">
+            <li>
+                <img src="./image/user.png" alt="">
+                <div class="remark_list_detail">
+                    <div class="top">
+                        <span class="username">renmimi</span>
+                        <div class="star_wrapper">
+                            <div class="nostar" >
+                                <img src="./image/nostar.png" alt="">
+                            </div>
+                            <div class="star" style="width: 60%;">
+                                <div class="star_hidden">
+                                    <img src="./image/star.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="remark_time">2019-5-16</span>
+                    </div>
+                    <p>专业服务, 厂家细节做得特别好, 准时到达</p>
+                    <div class="address">
+                        <span>大同市</span>
+                        <span>阳高县</span>
+                        <span>阳高批发厂</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="./image/user.png" alt="">
+                <div class="remark_list_detail">
+                    <div class="top">
+                        <span class="username">renmimi</span>
+                        <div class="star_wrapper">
+                            <div class="nostar" >
+                                <img src="./image/nostar.png" alt="">
+                            </div>
+                            <div class="star" style="width: 80%;">
+                                <div class="star_hidden">
+                                    <img src="./image/star.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="remark_time">2019-5-16</span>
+                    </div>
+                    <p>专业服务, 厂家细节做得特别好, 准时到达</p>
+                    <div class="address">
+                        <span>大同市</span>
+                        <span>阳高县</span>
+                        <span>阳高批发厂</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
 </div>
+<script src="./js/index.js"></script>
 </body>
 </html>

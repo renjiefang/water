@@ -41,7 +41,10 @@
     padding: 0 0.22rem;
     height: 2rem;
     width: auto;
-    /*background-color: red;*/
+    display: block;
+}
+.list_focus {
+    display: block;
 }
 .wrapper_fixed {
     position:absolute;
