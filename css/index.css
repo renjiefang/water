@@ -150,3 +150,40 @@ header {
     line-height: 0.40rem;
     color: rgb(157,220,255);
 }
+
+
+#fixed {
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,255,255,0.8);
+    display: none;
+}
+#fixed div {
+    position: absolute;
+    bottom: 2.5rem;
+    height: 2.45rem;
+    width: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#fixed img {
+     display: inline-block;
+     width: 1.90rem;
+     height: 2.47rem;
+}
+#fixed img:nth-child(1) {
+    margin-right: 1rem;
+
+}
+
+#fixed .close {
+    width: 0.53rem;
+    height: 0.53rem;
+    position: absolute;
+    bottom: 0.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+}

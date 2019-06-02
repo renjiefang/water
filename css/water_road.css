@@ -43,6 +43,9 @@
     width: auto;
     display: block;
 }
+.showren {
+    height: auto;
+}
 .list_focus {
     display: block;
 }

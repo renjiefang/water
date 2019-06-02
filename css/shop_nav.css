@@ -1,3 +1,6 @@
+
+@import "common.css";
+
 body {
     width: 100%;
 }
@@ -52,29 +55,7 @@ header a img{
     line-height: 0.52rem;
 }
 
- .title {
-    color: #35db82;
-    font-size: 0.32rem;
-    position: relative;
-    left: 0.25rem;
-     padding: 0 0.30rem;
-}
- .title:before {
-    content: '';
-    position: absolute;
-    width: 0.1rem;
-    height: 0.05rem;
-    background-color: #35db82;
-    box-shadow: 0  0.02rem 0.05rem 0
-    rgba(53, 219, 130, 0.43);
-    border-radius: 0.03rem;
-    left: 0rem;
-    top: 0.2rem;
-}
- .title span {
-    color: #4f5b64;
 
-}
  .list_item div {
      width: 100%;
  }

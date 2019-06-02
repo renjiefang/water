@@ -12,20 +12,24 @@ console.log(olist);
    console.log(oli);
  // not   onmouseenter
     ocateory.onmouseover = function() {
-    for(var i = 0; i <oli.length; i++) {
-        oli[i].id = i
+    for(let i = 0; i <oli.length; i++) {
+      //  oli[i].id = i
         oli[i].className = ''
         oli[i].onclick = function() {
             this.className = 'focus'
-                     index = this.id;
+                    // index = this.id;
+                      index = i
                      listShow(index)
         }
     }
 }
 
   function listShow(index) {
-        for(var i =0; i <olist.length; i++) {
-               olist[i].style.display = ''
+        for(let i =0; i <olist.length; i++) {
+               olist[i].style.display = 'none'
         }
         olist[index].style.display = 'block'
   }
+
+
+
